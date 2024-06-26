@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ODC-Project: Counter App</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <main
@@ -17,14 +18,14 @@
 
         <div class="flex items-center justify-center gap-5 mt-5">
           <button
-            class="bg-[#0E94A0] flex items-center justify-center text-2xl font-semibold rounded-sm shadow-xl text-lg font-medium tracking-tight py-1 px-4 text-white uppercase"
+            class="hvr-wobble-horizontal bg-[#0E94A0] flex items-center justify-center text-2xl font-semibold rounded-sm shadow-xl text-lg font-medium tracking-tight py-1 px-4 text-white uppercase"
             onclick="onHandleIncrementCounter()"
           >
             +
           </button>
           <h2 id="count-el" class="text-5xl font-bold">0</h2>
           <button
-            class="bg-red-500 text-white flex items-center justify-center font-semibold rounded-sm shadow-xl text-lg font-medium tracking-tight py-1 px-4 text-white uppercase"
+            class="hvr-wobble-horizontal bg-[#0E94A0] flex items-center justify-center text-2xl font-semibold rounded-sm shadow-xl text-lg font-medium tracking-tight py-1 px-4 text-white uppercase"
             onclick="onHandleDecrementCounter()"
           >
             -
@@ -32,7 +33,7 @@
         </div>
 
         <button
-          class="bg-red-500 text-white flex items-center justify-center font-semibold rounded-sm shadow-xl text-lg font-medium tracking-tight py-1 px-4 text-white uppercase"
+          class="hvr-wobble-vertical mt-3 bg-black text-white flex items-center justify-center font-semibold rounded-sm shadow-xl text-lg font-medium tracking-tight py-1 px-4 text-white uppercase"
           onclick="onHandleResetCounter()"
         >
           Reset
