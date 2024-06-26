@@ -8,19 +8,35 @@
   </head>
   <body>
     <main
-      class="min-h-screen bg-[#e9e5cd] w-full flex items-center justify-center"
+      class="min-h-screen bg-[#2F8590] w-full flex items-center justify-center"
     >
       <div
-        class="w-[400px] h-[300px] bg-white rounded-md shadow-lg p-4 flex items-center justify-center"
+        class="w-[400px] h-[200px] bg-[#E2FAFC] rounded-md shadow-xl p-4 flex flex-col items-center"
       >
-        <h1>My Counter App</h1>
-        <h2 id="count-el">0</h2>
+        <h1 class="text-3xl font-bold uppercase">My Counter App</h1>
 
-        <div>
-          <button onclick="onHandleIncrementCounter()">Increment</button>
-          <button onclick="onHandleResetCounter()">Reset</button>
-          <button onclick="onHandleDecrementCounter()">Decrement</button>
+        <div class="flex items-center justify-center gap-5 mt-5">
+          <button
+            class="bg-[#0E94A0] flex items-center justify-center text-2xl font-semibold rounded-sm shadow-xl text-lg font-medium tracking-tight py-1 px-4 text-white uppercase"
+            onclick="onHandleIncrementCounter()"
+          >
+            +
+          </button>
+          <h2 id="count-el" class="text-5xl font-bold">0</h2>
+          <button
+            class="bg-red-500 text-white flex items-center justify-center font-semibold rounded-sm shadow-xl text-lg font-medium tracking-tight py-1 px-4 text-white uppercase"
+            onclick="onHandleDecrementCounter()"
+          >
+            -
+          </button>
         </div>
+
+        <button
+          class="bg-red-500 text-white flex items-center justify-center font-semibold rounded-sm shadow-xl text-lg font-medium tracking-tight py-1 px-4 text-white uppercase"
+          onclick="onHandleResetCounter()"
+        >
+          Reset
+        </button>
       </div>
     </main>
 
